@@ -9,7 +9,7 @@ def hello(update: Update, context: CallbackContext) -> None:
     update.message.reply_text("Ciao " + update.effective_user.name + " e benvenuto!!!")
 
 
-updater = Updater('')
+updater = Updater(token)
 
 updater.dispatcher.add_handler(CommandHandler('hello', hello))
 
