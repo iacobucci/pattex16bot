@@ -1,5 +1,5 @@
 import os
-token = open(os.environ["HOME"] + "/.local/secret/telegram_token","r").read().strip()
+token = open("/home/selz/.local/secret/telegram_token","r").read().strip()
 
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, CallbackContext
